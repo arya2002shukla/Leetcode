@@ -52,7 +52,9 @@ public:
                 v += s[i];
                 m[s[i]] = true;
             } else {
-                max = ::max(max, static_cast<int>(v.length()));
+                if(max<v.length()){
+                    max=v.length();
+                }
                 int j = 0;
                 while (v[j] != s[i]) {
                     m.erase(v[j]);
@@ -63,7 +65,10 @@ public:
             }
         }
         
-        max = ::max(max, static_cast<int>(v.length()));
+       if(max<v.length()){
+            max=v.length();
+        }
         return max;
+        
     }
 };
