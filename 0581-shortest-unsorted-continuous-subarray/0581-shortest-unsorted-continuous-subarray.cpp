@@ -4,7 +4,7 @@ public:
         vector<int>vec = nums;
         sort(nums.begin(),nums.end());
         int minn = INT_MAX;
-        int maxx = 0;
+        int maxx = INT_MIN;
         bool flag = false;
         for(int i=0;i<nums.size();i++){
             if(nums[i]!=vec[i]){
