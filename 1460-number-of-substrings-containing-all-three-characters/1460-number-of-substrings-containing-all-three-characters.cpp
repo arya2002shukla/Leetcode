@@ -7,7 +7,7 @@ public:
         
         while(j<n){
             m[s[j]]++;
-            while(m['a']>=1 && m['b']>=1 && m['c']>=1){
+            while(m['a']>=1 && m['b']>=1 && m['c']>=1 ){
                 count+= (n-j);
                 m[s[i]]--;
                 i++;
