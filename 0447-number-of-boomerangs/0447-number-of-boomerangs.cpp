@@ -11,9 +11,9 @@ public:
                 mp[temp]++;
             }
             for(auto it : mp){
-                // if(it.second >= 2){
+                if(it.second >= 2){
                     ans += (it.second*(it.second-1));
-                // }
+                }
             }
             mp.clear();
         }
